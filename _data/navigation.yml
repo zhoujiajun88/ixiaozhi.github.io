@@ -6,8 +6,8 @@ header:
       zh-Hant:  歸檔
     url:        /archives.html
   - titles:
-      en:       About
-      zh:       关于
-      zh-Hans:  关于
-      zh-Hant:  關於
-    url:        /about.html
+      en:       RSS
+      zh:       RSS
+      zh-Hans:  RSS 
+      zh-Hant:  RSS 
+    url:        /feed.xml
