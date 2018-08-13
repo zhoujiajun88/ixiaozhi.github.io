@@ -1,0 +1,52 @@
+---
+title: Java 枚举单例缓存
+key: 20160105
+tags: java singleton
+---
+Java 单例设计模式在所有的设计模式中属于最常用的一个了。其中最常用到的功能便是使用单例来缓存全局变量，防止重复创建对象、提高程序执行效率。
+
+## 单例写法选择
+
+关于单例设计模式写法的讨论，已经有许多人的解答，这里直接附上参考链接
+
+* [如何正确地写出单例模式](http://wuchong.me/blog/2014/08/28/how-to-correctly-write-singleton-pattern/)
+* [Java：单例模式的七种写法](http://www.blogjava.net/kenzhh/archive/2015/11/03/357824.html)
+
+在不依赖 JDK 版本的时候，选择使用 `静态内部类 static nested class` 的单例模式是个好选择。它既保证了线程安全；同时读取实例的时候也不会进行同步，没有性能缺陷。
+
+介于现在 JDK 版本都在 1.5 及以上，所以我们可以安全的使用 `枚举 Enum` 来实现单例的方式(enum 关键字在 JDK 1.5 及以上才被支持)。直接声明枚举实例就可以达到单例的写法，如下。
+
+```
+public enum CacheSingleton {
+    INSTANCE;
+}
+```
+
+这个写法也是新版的《Effective Java》中推荐的模式写法。
+
+## 单例缓存
+
+至于使用单例去缓存变量，就很简单了。
+
+```
+public enum CacheSingleton {
+    INSTANCE;
+    
+    private String a;
+    
+    CacheSingleton() {
+        System.out.println("初始化缓存变量");
+        // do something
+        this.a = "1";
+    }
+    
+    public String getA() { return a; }
+}
+```
+
+使用缓存可以直接用 `CacheSingleton.INSTANCE` 获取实例对象。
+
+```
+CacheSingleton cache = CacheSingleton.INSTANCE;
+cache.getA();
+```
