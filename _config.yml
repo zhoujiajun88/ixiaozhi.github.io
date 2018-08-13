@@ -51,8 +51,8 @@ author:
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: zhoujiajun88/zhoujiajun88.github.io
-repository_tree: master
+repository: #zhoujiajun88/zhoujiajun88.github.io
+repository_tree: #master
 
 
 ## => Paths
@@ -137,7 +137,7 @@ pageview:
 ## => Analytics
 ##############################
 analytics:
-  provider: false # false (default), "google", "custom"
+  provider: google # false (default), "google", "custom"
 
   ## Google Analytics
   google:
