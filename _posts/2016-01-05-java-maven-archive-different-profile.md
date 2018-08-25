@@ -85,10 +85,11 @@ jdbc.password=${jdbc.password}
 
 然后添加 Tomcat Server，在 Before launch 中，设置第一步，选择 Run Another Configuration，并选中先前配置的 product。
 
-![](http://www.ixiaozhi.com/content/images/2016/01/A49B1B41-B9C0-44FC-87BB-5011638C817E.png)
+![](https://raw.githubusercontent.com/zhoujiajun88/zhoujiajun88.github.io/images/2016/A49B1B41-B9C0-44FC-87BB-5011638C817E.png)
 
 之后 Deployment 中配置 Deploy 的 war 包便可以运行。
 
-![](http://www.ixiaozhi.com/content/images/2016/01/2D824006-F547-4207-BD0A-86ECEBE08E50.png)
+![](https://raw.githubusercontent.com/zhoujiajun88/zhoujiajun88.github.io/images/2016/2D824006-F547-4207-BD0A-86ECEBE08E50.png)
 
-![](http://www.ixiaozhi.com/content/images/2016/01/31CFEDD7-C730-48DB-86D2-80665AF278AF.png)
+![](https://raw.githubusercontent.com/zhoujiajun88/zhoujiajun88.github.io/images/2016/31CFEDD7-C730-48DB-86D2-80665AF278AF.png)
+

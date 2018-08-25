@@ -94,7 +94,7 @@ Druid 的监控是一个 Servlet，直接在 `web.xml` 中开启。监控中会�
     </servlet-mapping>
 
 访问 /druid 可以监测数据源信息。
-![](http://www.ixiaozhi.com/content/images/2015/11/92E1F163-B8B5-4261-BE98-F6E5C26A4268.png)
+![](https://raw.githubusercontent.com/zhoujiajun88/zhoujiajun88.github.io/master/images/2015/92E1F163-B8B5-4261-BE98-F6E5C26A4268.png)
 
 ## 其他监测工具
 服务器的监控部署选择使用 probe 工具，probe.war 包直接置于 webapps 下即可。
@@ -107,7 +107,7 @@ Druid 的监控是一个 Servlet，直接在 `web.xml` 中开启。监控中会�
     <role rolename="manager-gui" />
     <user username="admin" password="123456789" roles="probeuser,poweruser,poweruserplus,manager-gui" />
 
-![](http://www.ixiaozhi.com/content/images/2015/11/5318825B-0A25-4B1D-86FD-6D19B555CFC5-1.png)
+![](https://raw.githubusercontent.com/zhoujiajun88/zhoujiajun88.github.io/master/images/2015/5318825B-0A25-4B1D-86FD-6D19B555CFC5-1.png)
 
 然而关键我并不是运维啊，硬头皮上。
 

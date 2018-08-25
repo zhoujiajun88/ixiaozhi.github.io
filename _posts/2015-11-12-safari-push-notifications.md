@@ -11,7 +11,7 @@ tags: Safari
 
 https://developer.apple.com/notifications/safari-push-notifications/
 
-![ Safari 推送过程](http://www.ixiaozhi.com/content/images/2015/11/9B08E895-6173-437E-A83B-676456B47436.png)
+![ Safari 推送过程](https://raw.githubusercontent.com/zhoujiajun88/zhoujiajun88.github.io/master/images/2015/9B08E895-6173-437E-A83B-676456B47436.png)
 
 国内网站 [少数派](http://sspai.com) 有使用该功能，可以用 Safari 访问尝试。
 
