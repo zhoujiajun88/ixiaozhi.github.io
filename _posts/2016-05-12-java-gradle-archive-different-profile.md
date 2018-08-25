@@ -27,7 +27,7 @@ sourceSets {
 
 把不同环境的 properties 的文件，分别放在 filters 目录下的不同的环境文件中，如下图。
 
-![alt](https://raw.githubusercontent.com/zhoujiajun88/zhoujiajun88.github.io/images/2016/gradle-filters-properties.png)
+![alt](https://raw.githubusercontent.com/zhoujiajun88/zhoujiajun88.github.io/master/images/2016/gradle-filters-properties.png)
 
 在使用 Gradle 编译的时候，添加参数 `-Dprofile=dev` 来指定编译的最终代码为何环境。如：
 
